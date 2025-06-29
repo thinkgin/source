@@ -1,0 +1,79 @@
+{
+    "version": "2025-06-27-004",
+    "deploymentTime": "2025-06-27T17:00:00Z",
+    "description": "修复页面错误和JS引用问题",
+    "changes": [
+        "修复外部JS文件引用问题，使用存在的app.min.js和utils.js",
+        "修复viewFileInfo函数的文件查找逻辑，增加容错机制",
+        "修复previewImage函数的文件查找逻辑，增加容错机制",
+        "增强错误屏蔽系统，更有效过滤扩展相关错误",
+        "添加文件查找失败的友好提示信息"
+    ],
+    "cacheVersion": "20250627-004",
+    "assetVersions": {
+        "main/css/main.css": "20250627-001",
+        "main/css/responsive.css": "20250627-001",
+        "main/js/app.min.js": "20250627-004",
+        "main/js/utils.js": "20250627-004",
+        "main/files-manifest.json": "20250627-001"
+    },
+    "projectStructure": {
+        "topLevel": [
+            "index.html",
+            "README.md"
+        ],
+        "mainDirectory": {
+            "css": [
+                "main.css",
+                "responsive.css"
+            ],
+            "js": [
+                "app.min.js",
+                "utils.js"
+            ],
+            "config": [
+                "version.json",
+                "files-manifest.json"
+            ]
+        },
+        "sourceDirectory": {
+            "app.min.js": "JavaScript文件 - app.min",
+            "demo.js": "JavaScript文件 - demo",
+            "utils.js": "JavaScript文件 - utils",
+            "styles/demo.css": "CSS样式文件 - demo",
+            "img/a.jpg": "图片文件 - a (784.3 KB)",
+            "img/b.jpg": "图片文件 - b (116 KB)",
+            "img/c.jpg": "图片文件 - c (691.1 KB)",
+            "docs/README.md": "说明文档",
+            "docs/legacy-README.md": "文档文件 - legacy-README",
+            "README.md": "说明文档",
+            "config/app-config.json": "数据文件 - app-config",
+            "config.json": "配置文件",
+            "data/config.json": "配置文件"
+        }
+    },
+    "cleanupInfo": {
+        "description": "精简main目录，移除开发时文件",
+        "deletedFiles": [
+            "main/package.json",
+            "main/update-manifest.js"
+        ],
+        "reason": "生产环境不需要Node.js配置和构建脚本"
+    },
+    "statisticsSync": {
+        "description": "文件清单数据已完全同步",
+        "totalFiles": 13,
+        "totalSize": "1.6 MB",
+        "fileTypes": {
+            "JavaScript": 3,
+            "CSS样式": 1,
+            "图片": 3,
+            "文档": 3,
+            "数据": 3
+        }
+    },
+    "assets": {
+        "css": "20250627-004",
+        "js": "20250627-004"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "app": {
+        "name": "项目文件浏览器",
+        "version": "1.0.0",
+        "description": "现代化的文件展示和查询界面"
+    },
+    "ui": {
+        "theme": "modern",
+        "primaryColor": "#667eea",
+        "secondaryColor": "#764ba2",
+        "accentColor": "#4ecdc4"
+    },
+    "features": {
+        "search": true,
+        "fileDetails": true,
+        "responsive": true,
+        "animations": true
+    },
+    "folders": [
+        "js",
+        "css",
+        "img",
+        "other"
+    ],
+    "fileTypes": {
+        "javascript": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+        ],
+        "stylesheet": [
+            ".css",
+            ".scss",
+            ".sass",
+            ".less"
+        ],
+        "image": [
+            ".jpg",
+            ".jpeg",
+            ".png",
+            ".gif",
+            ".svg",
+            ".webp"
+        ],
+        "text": [
+            ".txt",
+            ".md",
+            ".readme"
+        ],
+        "data": [
+            ".json",
+            ".xml",
+            ".csv"
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "app": {
+        "name": "文件管理系统演示",
+        "version": "1.0.0",
+        "description": "用于演示新的文件分类和管理功能"
+    },
+    "features": {
+        "autoClassification": true,
+        "subDirectorySupport": true,
+        "realtimeInfo": true
+    },
+    "fileTypes": [
+        "javascript",
+        "stylesheet",
+        "image",
+        "document",
+        "data",
+        "config",
+        "other"
+    ]
+}

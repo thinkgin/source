@@ -1,0 +1,14 @@
+/* 示例 CSS 文件 */
+/* 用于演示新的文件管理系统 */
+
+.demo-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.demo-title {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}

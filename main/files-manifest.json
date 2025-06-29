@@ -1,0 +1,169 @@
+{
+  "generated_at": "2025-06-28T09:55:04.074Z",
+  "version": "2025-06-28-001",
+  "description": "Source文件夹动态清单 - 按扩展名自动分类",
+  "source_directory": "source",
+  "files": {
+    "javascript": [
+      {
+        "name": "app.min.js",
+        "size": "890 B",
+        "type": "javascript",
+        "path": "./source/app.min.js",
+        "description": "JavaScript文件 - app.min",
+        "lastModified": "2025-06-28",
+        "icon": "📄",
+        "folder": "."
+      },
+      {
+        "name": "demo.js",
+        "size": "204 B",
+        "type": "javascript",
+        "path": "./source/demo.js",
+        "description": "JavaScript文件 - demo",
+        "lastModified": "2025-06-28",
+        "icon": "📄",
+        "folder": "."
+      },
+      {
+        "name": "utils.js",
+        "size": "1.4 KB",
+        "type": "javascript",
+        "path": "./source/utils.js",
+        "description": "JavaScript文件 - utils",
+        "lastModified": "2025-06-28",
+        "icon": "📄",
+        "folder": "."
+      }
+    ],
+    "stylesheet": [
+      {
+        "name": "demo.css",
+        "size": "256 B",
+        "type": "stylesheet",
+        "path": "./source/styles/demo.css",
+        "description": "CSS样式文件 - demo",
+        "lastModified": "2025-06-28",
+        "icon": "🎨",
+        "folder": "styles"
+      }
+    ],
+    "image": [
+      {
+        "name": "a685db44f09a8ee559a5d9d94fce6103--2367605914.jpg",
+        "size": "1.9 MB",
+        "type": "image",
+        "path": "./source/a685db44f09a8ee559a5d9d94fce6103--2367605914.jpg",
+        "description": "图片文件 - a685db44f09a8ee559a5d9d94fce6103--2367605914",
+        "lastModified": "2025-06-28",
+        "icon": "🖼️",
+        "folder": "."
+      },
+      {
+        "name": "a.jpg",
+        "size": "784.3 KB",
+        "type": "image",
+        "path": "./source/img/a.jpg",
+        "description": "图片文件 - a",
+        "lastModified": "2025-06-28",
+        "icon": "🖼️",
+        "folder": "img"
+      },
+      {
+        "name": "b.jpg",
+        "size": "116 KB",
+        "type": "image",
+        "path": "./source/img/b.jpg",
+        "description": "图片文件 - b",
+        "lastModified": "2025-06-28",
+        "icon": "🖼️",
+        "folder": "img"
+      },
+      {
+        "name": "c.jpg",
+        "size": "691.1 KB",
+        "type": "image",
+        "path": "./source/img/c.jpg",
+        "description": "图片文件 - c",
+        "lastModified": "2025-06-28",
+        "icon": "🖼️",
+        "folder": "img"
+      }
+    ],
+    "document": [
+      {
+        "name": "legacy-README.md",
+        "size": "432 B",
+        "type": "document",
+        "path": "./source/docs/legacy-README.md",
+        "description": "文档文件 - legacy-README",
+        "lastModified": "2025-06-28",
+        "icon": "📝",
+        "folder": "docs"
+      },
+      {
+        "name": "README.md",
+        "size": "442 B",
+        "type": "document",
+        "path": "./source/docs/README.md",
+        "description": "说明文档",
+        "lastModified": "2025-06-28",
+        "icon": "📝",
+        "folder": "docs"
+      },
+      {
+        "name": "README.md",
+        "size": "432 B",
+        "type": "document",
+        "path": "./source/README.md",
+        "description": "说明文档",
+        "lastModified": "2025-06-28",
+        "icon": "📝",
+        "folder": "."
+      }
+    ],
+    "data": [
+      {
+        "name": "app-config.json",
+        "size": "1.1 KB",
+        "type": "data",
+        "path": "./source/config/app-config.json",
+        "description": "数据文件 - app-config",
+        "lastModified": "2025-06-28",
+        "icon": "📊",
+        "folder": "config"
+      },
+      {
+        "name": "config.json",
+        "size": "1.1 KB",
+        "type": "data",
+        "path": "./source/config.json",
+        "description": "配置文件",
+        "lastModified": "2025-06-28",
+        "icon": "📊",
+        "folder": "."
+      },
+      {
+        "name": "config.json",
+        "size": "469 B",
+        "type": "data",
+        "path": "./source/data/config.json",
+        "description": "配置文件",
+        "lastModified": "2025-06-28",
+        "icon": "📊",
+        "folder": "data"
+      }
+    ]
+  },
+  "statistics": {
+    "total_files": 14,
+    "total_size": "3.4 MB",
+    "file_types": {
+      "JavaScript": 3,
+      "CSS样式": 1,
+      "图片": 4,
+      "文档": 3,
+      "数据": 3
+    }
+  }
+}

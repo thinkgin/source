@@ -1,0 +1,988 @@
+/* 响应式样式 - 移动端优化增强版 */
+/* 适配不同屏幕尺寸的样式规则 */
+
+/* 基础移动端优化 */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input, textarea, button {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+/* 移动设备 (320px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .title {
+        font-size: clamp(1.4rem, 5vw, 2.2rem);
+        margin-bottom: 6px;
+    }
+
+    .subtitle {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        margin-bottom: 15px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .controls {
+        padding: 12px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .search-container {
+        margin-bottom: 0;
+    }
+
+    .search-bar {
+        padding: 10px 35px 10px 12px;
+        font-size: 14px;
+    }
+
+    .search-icon {
+        right: 12px;
+        font-size: 1rem;
+    }
+
+    .filter-tabs {
+        gap: 6px;
+    }
+
+    .filter-tab {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* 手机端隐藏PC端统计信息和过滤标签，显示手机端统计信息 */
+    .stats-desktop {
+        display: none !important;
+    }
+
+    .filter-tabs {
+        display: none !important;
+    }
+
+    .stats-mobile {
+        display: block !important;
+        margin-bottom: 20px;
+    }
+
+    .mobile-stats-line {
+        padding: 6px 10px;
+        gap: 6px;
+    }
+
+    .mobile-stat {
+        font-size: 0.7rem;
+        flex: 1;
+        text-align: center;
+    }
+
+
+
+    .files-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .file-card {
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .file-icon {
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+    }
+
+    .file-icon-area {
+        margin-bottom: 6px;
+    }
+
+    .image-preview {
+        height: 80px;
+        border-radius: 8px;
+        margin-bottom: 4px;
+    }
+
+    .file-name {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .file-meta {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .file-size {
+        padding: 2px 8px;
+        font-size: 0.65rem;
+        margin-bottom: 6px;
+        border-radius: 12px;
+    }
+
+    .file-actions {
+        gap: 4px;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+        border-radius: 12px;
+        gap: 2px;
+    }
+
+    .demo-notice {
+        margin: 20px auto !important;
+        padding: 16px 20px !important;
+        font-size: 0.95rem !important;
+        border-radius: 12px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .upload-section {
+        padding: 25px 20px;
+        border-radius: 16px;
+        background: rgba(255,255,255,0.98);
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .folder-selector {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .folder-option {
+        padding: 18px 12px;
+        border-radius: 14px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #e1e8ed;
+        transition: all 0.3s ease;
+    }
+
+    .folder-option:active {
+        transform: scale(0.98);
+        background: #f0f2ff;
+    }
+
+    .folder-icon {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    .folder-option div:last-child {
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .info-area {
+        padding: 25px 20px;
+        border-radius: 16px;
+        margin-top: 20px;
+    }
+
+    .info-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .info-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .info-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+
+    .folder-summary {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .summary-item {
+        background: rgba(255,255,255,0.1);
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .summary-label {
+        display: block;
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+        opacity: 0.9;
+    }
+
+    .summary-count {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .files-section {
+        padding: 25px 20px;
+        background: rgba(255,255,255,0.98);
+        border-radius: 16px;
+    }
+
+    .folder-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .tab {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        border-radius: 20px;
+        background: #f8f9fa;
+        border: 2px solid #e1e8ed;
+        color: #666;
+        transition: all 0.3s ease;
+        min-width: 80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .tab.active {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border-color: #667eea;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    .tab:not(.active):active {
+        transform: scale(0.98);
+    }
+
+    .files-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .file-item {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        border: 1px solid rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .file-item:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .file-icon {
+        font-size: 3rem;
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+
+    .file-info {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .file-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #2c3e50;
+        word-break: break-word;
+    }
+
+    .file-meta {
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.4;
+    }
+
+    .file-actions {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 0.85rem;
+        border-radius: 12px;
+        border: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        min-width: 80px;
+        flex: 1;
+        max-width: calc(50% - 4px);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .btn:active {
+        transform: scale(0.96);
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+    }
+
+    .btn-secondary {
+        background: #f8f9fa;
+        color: #666;
+        border: 2px solid #e1e8ed;
+    }
+
+    .btn-success {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+
+    .btn-info {
+        background: linear-gradient(135deg, #17a2b8, #6f42c1);
+        color: white;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .stat-card {
+        background: rgba(255,255,255,0.98);
+        border-radius: 16px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 8px;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+        color: #666;
+        font-weight: 500;
+    }
+
+    /* 模态框移动端优化 */
+    .modal {
+        z-index: 10000;
+    }
+
+    .modal-content {
+        margin: 5% auto;
+        max-width: 95%;
+        max-height: 90%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .modal-header {
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .close {
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .close:hover, .close:active {
+        background: rgba(255,255,255,0.2);
+    }
+
+    .modal-body {
+        padding: 20px;
+        background: white;
+        max-height: calc(90vh - 120px);
+        overflow-y: auto;
+    }
+
+    .preview-image {
+        width: 100%;
+        max-height: 50vh;
+        object-fit: contain;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .preview-info {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .preview-info h4 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+        font-size: 1.1rem;
+    }
+
+    .preview-info p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .preview-info strong {
+        color: #667eea;
+    }
+
+    /* 加载状态和动画 */
+    .loading {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    /* 滚动条优化 */
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.3);
+        border-radius: 1px;
+    }
+}
+
+/* 小屏手机 (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: clamp(1.2rem, 6vw, 1.8rem);
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        font-size: clamp(0.75rem, 3.5vw, 0.9rem);
+        margin-bottom: 10px;
+    }
+
+    .header {
+        margin-bottom: 15px;
+    }
+
+    .controls {
+        padding: 8px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    .search-container {
+        margin-bottom: 0;
+    }
+
+    .search-bar {
+        padding: 8px 30px 8px 10px;
+        font-size: 13px;
+    }
+
+    .search-icon {
+        right: 10px;
+        font-size: 0.9rem;
+    }
+
+    .filter-tabs {
+        display: none !important;
+    }
+
+    /* 小屏手机端统计样式 */
+    .stats-mobile {
+        margin-bottom: 15px;
+    }
+
+    .mobile-stats-line {
+        padding: 4px 8px;
+        gap: 4px;
+        border-radius: 12px;
+    }
+
+    .mobile-stat {
+        font-size: 0.6rem;
+    }
+
+
+
+    .files-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .file-card {
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    .file-icon {
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+    }
+
+    .file-icon-area {
+        margin-bottom: 3px;
+    }
+
+    .image-preview {
+        height: 50px;
+        border-radius: 6px;
+        margin-bottom: 3px;
+    }
+
+    .file-name {
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .file-meta {
+        font-size: 0.6rem;
+        margin-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .file-size {
+        padding: 1px 6px;
+        font-size: 0.6rem;
+        margin-bottom: 4px;
+        border-radius: 10px;
+    }
+
+    .file-actions {
+        gap: 2px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .btn {
+        padding: 3px 4px;
+        font-size: 0.55rem;
+        border-radius: 10px;
+        gap: 1px;
+        flex: 1;
+        justify-content: center;
+        white-space: nowrap;
+        min-width: 0;
+    }
+
+    /* 模态框在小屏上的优化 */
+    .modal-content {
+        width: 95vw !important;
+        height: 90vh !important;
+        margin: 5vh auto !important;
+        border-radius: 10px !important;
+        padding: 10px !important;
+    }
+
+    .modal-image {
+        max-height: calc(90vh - 40px) !important;
+        border-radius: 8px !important;
+    }
+
+    .demo-notice {
+        margin: 15px auto !important;
+        padding: 14px 16px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .upload-section, .files-section {
+        padding: 20px 15px;
+    }
+
+    .folder-selector {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .folder-option {
+        padding: 20px 15px;
+        min-height: 90px;
+    }
+
+    .folder-icon {
+        font-size: 2rem;
+    }
+
+    .folder-summary {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .folder-tabs {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .tab {
+        padding: 14px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .file-item {
+        padding: 18px 15px;
+    }
+
+    .file-icon {
+        font-size: 2.5rem;
+    }
+
+    .file-name {
+        font-size: 1rem;
+    }
+
+    .file-meta {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 14px 16px;
+        font-size: 0.8rem;
+        max-width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .modal-header, .modal-body {
+        padding: 15px;
+    }
+
+    .preview-image {
+        max-height: 40vh;
+    }
+}
+
+/* 平板设备 (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+        padding: 25px;
+    }
+
+    .main-content {
+        gap: 30px;
+    }
+
+    .folder-selector {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .files-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 大屏幕 (1024px+) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .main-content {
+        gap: 35px;
+    }
+
+    .files-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+/* 横屏模式优化 */
+@media (max-width: 768px) and (orientation: landscape) {
+    .title {
+        font-size: 1.6rem !important;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem !important;
+        margin-bottom: 15px;
+    }
+
+    .demo-notice {
+        margin: 10px auto !important;
+        padding: 10px 16px !important;
+    }
+
+    .main-content {
+        gap: 20px;
+    }
+
+    .upload-section, .files-section {
+        padding: 20px;
+    }
+
+    .modal-content {
+        max-height: 95vh;
+    }
+
+    .preview-image {
+        max-height: 60vh;
+    }
+}
+
+/* 超小屏设备 (320px以下) */
+@media (max-width: 320px) {
+    .container {
+        padding: 6px;
+    }
+
+    .files-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    .file-card {
+        padding: 6px;
+    }
+
+    .image-preview {
+        height: 40px;
+    }
+
+    .file-name {
+        font-size: 0.7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn {
+        font-size: 0.5rem;
+        padding: 2px 3px;
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+/* 横屏模式优化 */
+@media (orientation: landscape) and (max-height: 600px) {
+    .header {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        margin-bottom: 8px;
+    }
+
+    .controls {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+
+    .search-container {
+        margin-bottom: 0;
+    }
+
+    .stats-mobile {
+        margin-bottom: 12px;
+    }
+
+    .mobile-stats-line {
+        padding: 6px 10px;
+    }
+
+    .mobile-stat {
+        font-size: 0.7rem;
+    }
+
+    .files-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .image-preview {
+        height: 60px;
+    }
+}
+
+/* 触摸设备专用样式 */
+@media (hover: none) and (pointer: coarse) {
+    .file-card:hover {
+        transform: none;
+    }
+
+    .file-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .btn:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+
+    .filter-tab:hover {
+        transform: none;
+    }
+
+    .filter-tab:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+    .file-card {
+        border: 2px solid rgba(0,0,0,0.3);
+    }
+
+    .btn {
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .filter-tab {
+        border-width: 2px;
+    }
+}
+
+/* 减少动画设置支持 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* 暗色模式支持准备 */
+@media (prefers-color-scheme: dark) {
+    /* 预留暗色模式样式 */
+}
+
+/* 自定义滚动条 - 移动端 */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.3);
+        border-radius: 1px;
+    }
+}
